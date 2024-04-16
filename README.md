@@ -25,10 +25,10 @@ Users should be able to:
 ### Screenshot
 
 #### Desktop View (1440 wide)
-![Desktop view](/3-column-preview-card-component-main/images/screenshot-1440w.png)
+![Desktop view](images/screenshot-1440w.png)
 
 #### Mobile View (375 wide)
-![Mobile view](/3-column-preview-card-component-main/images/screenshot-375w.png)
+![Mobile view](images/screenshot-375w.png)
 
 ### Links
 
