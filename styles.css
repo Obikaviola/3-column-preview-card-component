@@ -1,0 +1,152 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    place-content: center;
+    padding: 1rem;
+}
+
+.big-shoulders-bold {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lexend-deca-regular {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    color: hsla(0, 0%, 100%, 0.75);
+    max-width: 20rem;
+    margin: 6rem auto 2rem;
+}
+
+section {
+    padding: 2.5rem;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 1rem 1rem 0 0;
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 1rem 1rem;
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+    max-height: 10rem;
+}
+/* using max-height made the paragraph stay in a specified height and help made the buttons aligh with each other */
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    padding: 0.8rem 2rem;
+    border: 0;
+    border-radius: 2rem;
+}
+
+.sedans>button {
+    color: hsl(31, 77%, 52%);
+}
+
+.sedans>button:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    outline: 2px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+.suvs>button {
+    color: hsl(184, 100%, 22%);
+}
+
+.suvs>button:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    outline: 2px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+.luxury>button {
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury>button:hover {
+    background-color: hsl(179, 100%, 13%);
+    outline: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2rem;
+}
+
+.attribution { 
+    font-size: 13px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 700px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 50rem;
+        max-height: 22rem;
+        margin: 6rem auto;
+    }
+
+    .sedans {
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .luxury {
+        border-radius: 0 1rem 1rem 0;
+    }
+
+    p {
+        padding-bottom: 4rem;
+    }
+}
