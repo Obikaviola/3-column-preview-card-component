@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-3column-preview-card-component-8ASIbM5tF8)
+- Live Site URL: [Add live site URL here](https://obikaviola.github.io/3-column-preview-card-component/)
 
 ## My process
 
