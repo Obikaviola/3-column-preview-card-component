@@ -126,6 +126,9 @@ footer {
 }
 
 @media (min-width: 700px) {
+    .container {
+        width: 57%;
+    }
 
     main {
         display: grid;
