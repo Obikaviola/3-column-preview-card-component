@@ -10,7 +10,7 @@ body{
     margin: 0;
     padding: 0;
     font-size: 15px;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: hsl(0, 0%, 95%);
 }
 
@@ -19,7 +19,9 @@ body{
     flex-direction: column;
     min-height: 100vh;
     place-content: center;
-    padding: 1rem;
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
 }
 
 .big-shoulders-bold {
@@ -38,14 +40,13 @@ body{
 
 main {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
     color: hsla(0, 0%, 100%, 0.75);
-    max-width: 20rem;
-    margin: 6rem auto 2rem;
+    padding-top: 2em;
 }
 
 section {
-    padding: 2.5rem;
+    padding: 2.8em;
+    padding-bottom: 4em;
 }
 
 .sedans {
@@ -66,58 +67,53 @@ h1 {
     color: hsl(0, 0%, 95%);
     font-size: 2rem;
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    margin-block: 1.5rem;
 }
 
 p {
     line-height: 1.5rem;
-    padding-bottom: 1rem;
-    max-height: 10rem;
+    margin-bottom: 3em;
 }
-/* using max-height made the paragraph stay in a specified height and help made the buttons aligh with each other */
 
-button {
+.learn_more {
     background-color: hsl(0, 0%, 95%);
-    padding: 0.8rem 2rem;
-    border: 0;
+    padding: 1em 2em;
     border-radius: 2rem;
+    text-decoration: none;
 }
 
-.sedans>button {
+.sedans>a {
     color: hsl(31, 77%, 52%);
 }
 
-.sedans>button:hover {
+.sedans>a:hover {
     background-color: hsl(31, 77%, 52%);
     color: hsl(0, 0%, 95%);
     outline: 2px solid hsl(0, 0%, 95%);
-    cursor: pointer;
 }
 
-.suvs>button {
+.suvs>a {
     color: hsl(184, 100%, 22%);
 }
 
-.suvs>button:hover {
+.suvs>a:hover {
     background-color: hsl(184, 100%, 22%);
     color: hsl(0, 0%, 95%);
     outline: 2px solid hsl(0, 0%, 95%);
-    cursor: pointer;
 }
 
-.luxury>button {
+.luxury>a {
     color: hsl(179, 100%, 13%);
 }
 
-.luxury>button:hover {
+.luxury>a:hover {
     background-color: hsl(179, 100%, 13%);
     outline: 2px solid hsl(0, 0%, 95%);
     color: hsl(0, 0%, 95%);
-    cursor: pointer;
 }
 
 footer {
-    margin-top: 2rem;
+    margin-block:1em;
 }
 
 .attribution { 
@@ -130,12 +126,10 @@ footer {
 }
 
 @media (min-width: 700px) {
+
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        max-width: 50rem;
-        max-height: 22rem;
-        margin: 6rem auto;
     }
 
     .sedans {
@@ -147,6 +141,6 @@ footer {
     }
 
     p {
-        padding-bottom: 4rem;
+        margin-bottom: 6em;
     }
 }
