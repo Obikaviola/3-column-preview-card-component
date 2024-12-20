@@ -126,24 +126,30 @@ footer {
 }
 
 @media (min-width: 700px) {
-    .container {
-        width: 57%;
-    }
 
     main {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns:  repeat(2, 1fr);
+        max-width: 40em;
+        margin: 0 auto;
     }
 
     .sedans {
-        border-radius: 1rem 0 0 1rem;
+        border-radius: 1rem 0 0 0;
+    }
+
+    .suvs {
+        border-radius: 0 1rem 0 0;
     }
 
     .luxury {
-        border-radius: 0 1rem 1rem 0;
+        border-radius: 0 0 1rem 1rem;
+        grid-column: span 2;
     }
 
     p {
         margin-bottom: 6em;
     }
 }
+
+@media (min-width: )
