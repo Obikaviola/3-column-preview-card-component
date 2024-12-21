@@ -10,7 +10,6 @@ body{
     margin: 0;
     padding: 0;
     font-size: 15px;
-    /* min-height: 100vh; */
     background-color: hsl(0, 0%, 95%);
 }
 
@@ -82,31 +81,31 @@ p {
     text-decoration: none;
 }
 
-.sedans>a {
+.sedans > a {
     color: hsl(31, 77%, 52%);
 }
 
-.sedans>a:hover {
+.sedans > a:hover {
     background-color: hsl(31, 77%, 52%);
     color: hsl(0, 0%, 95%);
     outline: 2px solid hsl(0, 0%, 95%);
 }
 
-.suvs>a {
+.suvs > a {
     color: hsl(184, 100%, 22%);
 }
 
-.suvs>a:hover {
+.suvs > a:hover {
     background-color: hsl(184, 100%, 22%);
     color: hsl(0, 0%, 95%);
     outline: 2px solid hsl(0, 0%, 95%);
 }
 
-.luxury>a {
+.luxury > a {
     color: hsl(179, 100%, 13%);
 }
 
-.luxury>a:hover {
+.luxury > a:hover {
     background-color: hsl(179, 100%, 13%);
     outline: 2px solid hsl(0, 0%, 95%);
     color: hsl(0, 0%, 95%);
