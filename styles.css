@@ -125,12 +125,33 @@ footer {
     color: hsl(228, 45%, 44%); 
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
 
     main {
         display: grid;
-        grid-template-columns:  repeat(2, 1fr);
-        max-width: 40em;
+        grid-template-columns:  repeat(3, 1fr);
+        max-width: 60em;
+        margin: 0 auto;
+    }
+
+    .sedans {
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .luxury {
+        border-radius: 0 1rem 1rem 0;
+    }
+
+    p {
+        margin-bottom: 6em;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 999px){ 
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 60em;
         margin: 0 auto;
     }
 
@@ -143,13 +164,6 @@ footer {
     }
 
     .luxury {
-        border-radius: 0 0 1rem 1rem;
         grid-column: span 2;
     }
-
-    p {
-        margin-bottom: 6em;
-    }
-}
-
-@media (min-width: )
+ } 
